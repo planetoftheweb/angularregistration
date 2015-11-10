@@ -1,7 +1,7 @@
-[![Angular JS Registration](hero.png)](http://www.lynda.com/Sass-tutorials/Sass-Essential-Training/375925-2.html)
-# AngularJS: Registration
-
 # AngularJS: Adding Registration to Your Application
+
+[![Angular JS Registration](hero.png)](http://www.lynda.com/Sass-tutorials/Sass-Essential-Training/375925-2.html)
+
 This is the repository for my course, [This is the repository for my course, [AngularJS: Adding Registration to Your Application](AngularJS: Adding Registration to Your Application). The full course is available at [lynda.com](http://lynda.com).
 ](http://www.lynda.com/Sass-tutorials/Sass-Essential-Training/375925-2.html). The full course is available at [lynda.com](http://lynda.com).
 
