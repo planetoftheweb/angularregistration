@@ -4,12 +4,12 @@ myApp.factory('Authentication',
   function($rootScope, $firebaseAuth, $firebaseObject,
     $location, FIREBASE_URL) {
 
-  var ref = new Firebase(FIREBASE_URL);
-  var auth = $firebaseAuth(ref);
+  var ref = firebase.database().ref();
+  var auth = $firebaseAuth();
 
-  auth.$onAuth(function(authUser) {
+  auth.$onAuthStateChanged(function(authUser) {
     if (authUser) {
-      var userRef = new Firebase(FIREBASE_URL + 'users/' + authUser.uid );
+      var userRef = ref.child('users').child(authUser.uid);
       var userObj = $firebaseObject(userRef);
       $rootScope.currentUser = userObj;
     } else {
@@ -20,10 +20,10 @@ myApp.factory('Authentication',
 
   var myObject = {
     login: function(user) {
-      auth.$authWithPassword({
-        email: user.email,
-        password: user.password
-      }).then(function(regUser) {
+      auth.$signInWithEmailAndPassword(
+        user.email,
+        user.password
+      ).then(function(regUser) {
         $location.path('/success');
       }).catch(function(error) {
        $rootScope.message = error.message;
@@ -31,22 +31,22 @@ myApp.factory('Authentication',
     }, //login
 
     logout: function() {
-      return auth.$unauth();
+      return auth.$signOut();
     }, //logout
 
     requireAuth: function() {
-      return auth.$requireAuth();
+      return auth.$requireSignIn();
     }, //require Authentication
 
     register: function(user) {
-      auth.$createUser({
-        email: user.email,
-        password: user.password
-      }).then(function(regUser) {
+      auth.$createUserWithEmailAndPassword(
+        user.email,
+        user.password
+      ).then(function(regUser) {
 
-        var regRef = new Firebase(FIREBASE_URL + 'users')
+        var regRef = ref.child('users')
         .child(regUser.uid).set({
-          date: Firebase.ServerValue.TIMESTAMP,
+          date: firebase.database.ServerValue.TIMESTAMP,
           regUser: regUser.uid,
           firstname: user.firstname,
           lastname: user.lastname,
