@@ -1,8 +1,8 @@
 myApp.factory('Authentication', 
   ['$rootScope', '$firebaseAuth', '$firebaseObject',
-  '$location', 'FIREBASE_URL',
+  '$location',
   function($rootScope, $firebaseAuth, $firebaseObject,
-    $location, FIREBASE_URL) {
+    $location) {
 
   var ref = firebase.database().ref();
   var auth = $firebaseAuth();
@@ -16,7 +16,6 @@ myApp.factory('Authentication',
       $rootScope.currentUser = '';
     }
   });
-
 
   var myObject = {
     login: function(user) {
