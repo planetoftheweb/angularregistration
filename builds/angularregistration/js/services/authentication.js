@@ -1,13 +1,20 @@
 myApp.factory('Authentication',
-  ['$rootScope', '$firebaseAuth',
-  function($rootScope, $firebaseAuth) {
+  ['$rootScope', '$location', '$firebaseAuth',
+  function($rootScope, $location, $firebaseAuth) {
 
   var ref = firebase.database().ref();
   var auth = $firebaseAuth();
 
   return {
     login: function(user) {
-      $rootScope.message = "Welcome " + $rootScope.user.email;
+      auth.$signInWithEmailAndPassword(
+        user.email,
+        user.password
+      ).then(function(user) {
+        $location.path('/success');
+      }).catch(function(error) {
+        $rootScope.message = error.message;
+      }) //signInWithEmailAndPassword
     }, //login
 
     register: function(user) {
