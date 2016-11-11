@@ -4,6 +4,7 @@ myApp.factory('Authentication',
 
   var ref = firebase.database().ref();
   var auth = $firebaseAuth();
+  var myObject;
 
   auth.$onAuthStateChanged(function(authUser) {
     if(authUser) {
@@ -15,8 +16,7 @@ myApp.factory('Authentication',
     }
   });
 
-
-  return {
+  myObject = {
     login: function(user) {
       auth.$signInWithEmailAndPassword(
         user.email,
@@ -49,12 +49,15 @@ myApp.factory('Authentication',
             lastname: user.lastname,
             email: user.email
           }); //userinfo
-        $rootScope.message = "Hi " + user.firstname +
-        ", Thanks for registering";
+          myObject.login(user);
       }).catch(function(error) {
         $rootScope.message = error.message;
       }); //createUserWithEmailAndPassword
     } //register
 
   }; //return
+
+
+  return myObject;
+
 }]); //factory
