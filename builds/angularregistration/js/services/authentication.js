@@ -28,6 +28,10 @@ myApp.factory('Authentication',
       }); //signInWithEmailAndPassword
     }, //login
 
+    logout: function() {
+      return auth.$signOut();
+    }, //logout
+
     register: function(user) {
       auth.$createUserWithEmailAndPassword(
         user.email,
