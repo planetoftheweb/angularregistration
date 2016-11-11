@@ -32,6 +32,10 @@ myApp.factory('Authentication',
       return auth.$signOut();
     }, //logout
 
+    requireAuth: function() {
+      return auth.$requireSignIn();
+    }, //require Authentication
+
     register: function(user) {
       auth.$createUserWithEmailAndPassword(
         user.email,
