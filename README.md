@@ -1,5 +1,5 @@
 # AngularJS 1: Adding Registration to Your Application
-![AngularJS 1: Adding Registration to Your Application](hero.png)
+![AngularJS 1: Adding Registration to Your Application](hero.jpg)
 This is the repository for my course, [AngularJS 1: Adding Registration to Your Application](https://www.lynda.com/AngularJS-tutorials/AngularJS-Adding-Registration-Your-Application/438887-2.html). The full course is available at [lynda.com](http://lynda.com).
 
 ## Course Description
