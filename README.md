@@ -1,9 +1,6 @@
-# Building a Data-Driven App with AngularJS
-![Building a Data-Driven App with AngularJS](hero.png)
-This is the repository for my course, [Building a Data-Driven App with AngularJS](http://www.lynda.com/AngularJS-tutorials/Building-Data-Driven-App-AngularJS/368918-2.html). The full course is available at [lynda.com](http://lynda.com).
-- [Demo Website](http://chetkins.com)
-- [My Personal Website](http://raybo.org)
-
+# AngularJS 1: Adding Registration to Your Application
+![AngularJS 1: Adding Registration to Your Application](hero.png)
+This is the repository for my course, [AngularJS 1: Adding Registration to Your Application](https://www.lynda.com/AngularJS-tutorials/AngularJS-Adding-Registration-Your-Application/438887-2.html). The full course is available at [lynda.com](http://lynda.com).
 
 ## Course Description
 Authentication is a fundamental part of any web application, but it can be notoriously difficult to implement. In this short course, you'll create a simple registration system that allows users to log in and out of your applications. By taking advantage of Google's Firebase authentication service, you can manage registrations easily and securely. In the process, you'll explore working with the AngularJS application structure (including routes and controllers), storing user information into the Firebase NoSQL database, and creating services to manage registration information throughout different controllers. This will help you create a great registration template that you can use as a starting point in a variety of web applications.
@@ -24,7 +21,7 @@ This repository has branches for each of the videos in the course. You can use t
 	- [git](http://git-scm.com/)
  	- [gulp](http://gulpjs.com/)
 2. Clone this repository into your local machine using the terminal (mac) or Gitbash (PC) `> git clone https://github.com/planetoftheweb/angularregistration.git`
-3. CD to the folder `cd angulardata`
+3. CD to the folder `cd angularregistration`
 4. Run `> npm install` to install the project dependencies
 
 For more help setting up a comprehensive Gulp.js workflow, check out [Web Project Workflows with Gulp.js, Git, and Browserify](http://www.lynda.com/Web-Web-Design-tutorials/Web-Project-Workflows-Gulpjs-Git-Browserify/154416-2.html).
