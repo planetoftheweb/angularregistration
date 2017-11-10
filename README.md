@@ -1,30 +1,30 @@
+This is the repository for my course, AngularJS 1: Adding Registration to Your Application on LinkedIn Learning and Lynda.com.
+
+tutorial, training, linkedinlearning, lynda, lynda-com, rayvillalobos
+
 # AngularJS 1: Adding Registration to Your Application
-![AngularJS 1: Adding Registration to Your Application](hero.jpg)
-This is the repository for my course, [AngularJS 1: Adding Registration to Your Application](https://www.lynda.com/AngularJS-tutorials/AngularJS-Adding-Registration-Your-Application/438887-2.html). The full course is available at [lynda.com](http://lynda.com).
+This is the repository for my course AngularJS 1: Adding Registration to Your Application. The full course is available on [LinkedIn Learning](https://www.linkedin.com/learning/angularjs-1-adding-registration-to-your-application-2?trk=insiders_6787408_learning) and [Lynda.com](https://www.lynda.com/Angular-tutorials/AngularJS-1-Adding-Registration-Your-Application/560052-2.html)
 
-## Course Description
-Authentication is a fundamental part of any web application, but it can be notoriously difficult to implement. In this short course, you'll create a simple registration system that allows users to log in and out of your applications. By taking advantage of Google's Firebase authentication service, you can manage registrations easily and securely. In the process, you'll explore working with the AngularJS application structure (including routes and controllers), storing user information into the Firebase NoSQL database, and creating services to manage registration information throughout different controllers. This will help you create a great registration template that you can use as a starting point in a variety of web applications.
+[![AngularJS 1: Adding Registration to Your Application](https://media-exp2.licdn.com/media-proxy/ext?w=1200&h=675&f=n&hash=I1Qu1CQJhf08%2FufcvV0o5kSUrUs%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6plxVUzgUv5K_PrkC9q0RIUJDPBy-kXSWq_9efZXHpecLdZLSiolwRfCQAmQA2e-mpRjbgG469LcLmY4Yx3A)](https://www.linkedin.com/learning/angularjs-1-adding-registration-to-your-application-2?trk=insiders_6787408_learning)
 
-## Topics include:
-- Adding a basic MVC structure
-- Using routes
-- Processing form input
-- Integrating Firebase
-- Storing registration information in the database
-- Logging users in and out of an app
+Registration is a fundamental part of any web application, but it can be notoriously difficult to implement. In this short course, we'll create a simple and straightforward registration system that allows users to log in and log out of an application. The techniques use AngularJS and Google Firebase, a mobile development platform that makes registration easy and secure. In the process, you'll explore the basics of AngularJS MVC architecture and the steps to storing custom user information in the Firebase NoSQL database. Learn how to create basic routes to load different content depending on the target URL, and create basic controllers to tie templates to code. At the end of the course, you'll have a great template that you can use as a starting point for a registration system in any of your own web applications.
 
 ## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage. Or you can simply add `/tree/BRANCH_NAME` to the URL to go to the branch you want to peek at.
+This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage. Or you can simply add `/tree/BRANCH_NAME` to the URL to go to the branch you want to peek at. 
 
+## Branches
+The branches are structured so that they correspond to the videos in the course. So, for example if I name a branch `02_03b` then that branch corresponds to the second chapter and the third video in that chapter. The extra letter at the end of the name corresponds to the state of the branch. A `b` means that this is how the code looks at the beginning of the video, an `e` means that is how the code looked at the end of the video.
+
+You may find additional branches that correspond to other states, so for example, you may see a `t`, which means this is a target branch. A target branch is something I use during development or updates of a course and it's for a branch that I'm working towards. For the purposes of taking a course, you may ignore any additional branches. The `master` branch usually has the state of the project as I'm working through it and the final state of the code when I finish the course. 
+
+## Installing
 1. Make sure you have these installed
 	- [node.js](http://nodejs.org/)
 	- [git](http://git-scm.com/)
- 	- [gulp](http://gulpjs.com/)
-2. Clone this repository into your local machine using the terminal (mac) or Gitbash (PC) `> git clone https://github.com/planetoftheweb/angularregistration.git`
-3. CD to the folder `cd angularregistration`
+2. Clone this repository into your local machine using the terminal (mac) or Gitbash (PC) `> git clone CLONEURL`
+3. CD to the folder `cd FOLDERNAME`
 4. Run `> npm install` to install the project dependencies
-
-For more help setting up a comprehensive Gulp.js workflow, check out [Web Project Workflows with Gulp.js, Git, and Browserify](http://www.lynda.com/Web-Web-Design-tutorials/Web-Project-Workflows-Gulpjs-Git-Browserify/154416-2.html).
+5. Run `> grunt` to start live preview server
 
 ## More Stuff
-Check out some of my [other courses on lynda.com](http://lynda.com/rayvillalobos). You can also check out my [youtube channel](http://youtube.com/planetoftheweb), [follow me on twitter](http://twitter.com/planetoftheweb), or read [my blog](http://raybo.org).
+Check out some of my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/ray-villalobos?trk=insiders_6787408_learning) and [lynda.com](http://lynda.com/rayvillalobos). You can follow me on [LinkedIn](https://www.linkedin.com/in/planetoftheweb/), read [my blog](http://raybo.org), [follow me on twitter](http://twitter.com/planetoftheweb), or check out my [youtube channel](http://youtube.com/planetoftheweb).
