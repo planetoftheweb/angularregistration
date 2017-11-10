@@ -1,7 +1,3 @@
-This is the repository for my course, AngularJS 1: Adding Registration to Your Application on LinkedIn Learning and Lynda.com.
-
-tutorial, training, linkedinlearning, lynda, lynda-com, rayvillalobos
-
 # AngularJS 1: Adding Registration to Your Application
 This is the repository for my course AngularJS 1: Adding Registration to Your Application. The full course is available on [LinkedIn Learning](https://www.linkedin.com/learning/angularjs-1-adding-registration-to-your-application-2?trk=insiders_6787408_learning) and [Lynda.com](https://www.lynda.com/Angular-tutorials/AngularJS-1-Adding-Registration-Your-Application/560052-2.html)
 
